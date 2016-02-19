@@ -1,1 +1,12 @@
 https://github.com/stylesuxx/generator-react-webpack-redux
+
+react-webpack by Simon Bailey 
+Using React with Webpack via Babel	
+Feb 2016 / 1114	stars / 3001 installs
+--------------------------------------------------
+react-webpack-redux by Chris Landa 
+ReactJS and Flux (redux) via Webpack	
+Feb 2016 / 57 stars / 505 install
+--------------------------------------------------
+
+

@@ -11,11 +11,13 @@ import React, {
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Main from '../components/Main';
+import PageTemplateComponent from '../components/template/PageTemplateComponent';
 /* Populated by react-webpack-redux:reducer */
 class App extends Component {
   render() {
-    const {actions, widgets} = this.props;
-    return <Main actions={actions} widgets={widgets}/>;
+    const {actions, widgets, templates} = this.props;
+    return <PageTemplateComponent actions={actions} widgets={widgets} templates={templates}/>;
+
   }
 }
 /* Populated by react-webpack-redux:reducer
@@ -25,16 +27,23 @@ class App extends Component {
  */
 App.propTypes = {
   actions: PropTypes.object.isRequired,
-  widgets: PropTypes.object.isRequired
+  widgets: PropTypes.object.isRequired,
+  templates: PropTypes.object.isRequired
 };
 function mapStateToProps(state) {
   /* Populated by react-webpack-redux:reducer */
-  const props = { widgets: state.widgets };
+  const props = {
+    widgets: state.widgets,
+    templates: state.templates
+  };
   return props;
 }
 function mapDispatchToProps(dispatch) {
   /* Populated by react-webpack-redux:action */
-  const actions = { addWidget: require('../actions/widgets/addWidget.js') };
+  const actions = {
+    addWidget: require('../actions/widgets/addWidget.js'),
+    getPageTemplate: require('..\\actions\\template\\getPageTemplate.js')
+  };
   const actionMap = { actions: bindActionCreators(actions, dispatch) };
   return actionMap;
 }

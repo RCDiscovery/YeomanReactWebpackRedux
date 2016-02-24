@@ -1,4 +1,21 @@
-<div style="background-image: url(../../images/background2.jpg); background-repeat:no-repeat; height: 900px; width: 
-1024px; border: 1px solid black;"> 
-	Welcome to League Community POC - Pate Template body
+<div className="pagetemplate-component" style="height:600px; width:1024px;background-image: url(../../images/background2.jpg); background-repeat:no-repeat;" > 
+	<!-- table-bordered: sass style -->
+	<table height='100%' width='100%' > 
+	  <tr>
+	    <td colspan='3'>	
+			<br/>HEADER
+		    <br/>
+		    <br/>Welcome to League Community
+			<br/>This a POC for dynamic templates usage
+			<br/>
+		</td>
+	  </tr>
+	  <tr height='45%'>
+	    <td width="150">RIGHT TOP COLUMN</td>
+	    <td rowspan="2">WALL</td> 
+	  </tr>
+	  <tr height='45%'>
+	    <td>RIGHT BUTTOM COLUMN</td>
+	  </tr>
+	</table>
 </div>

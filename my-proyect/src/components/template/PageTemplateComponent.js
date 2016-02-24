@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-require('styles/template/PageTemplate.sass');
+require('styles/template/PageTemplate.scss');
 import Template1 from './template1.rt';
 import Template2 from './template2.rt';
 

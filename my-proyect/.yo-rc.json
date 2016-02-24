@@ -1,7 +1,7 @@
 {
   "generator-react-webpack": {
-    "appName": "myProyect",
-    "style": "sass",
+    "appName": "leagueCommunity",
+    "style": "scss",
     "postcss": true
   }
 }

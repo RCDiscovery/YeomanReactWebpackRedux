@@ -2,27 +2,25 @@
 
 import React from 'react';
 
-require('styles/template/PageTemplate.sass');
+require('styles/template/PageTemplate.scss');
+import Template1 from './template1.rt';
+import Template2 from './template2.rt';
 
-var divStyle = {
-  color: 'white',
-  width: '100%',
-  height: '100%',
-  backgroundImage: 'url( ../../images/background1.jpg )',
-  backgroundSize: '1400',
-  backgroundRepeat: 'no-repeat',
-  WebkitTransition: 'all', // note the capital 'W' here
-  msTransition: 'all' // 'ms' is the only lowercase vendor prefix
-};
+var currTemplate = 'template2';
 
 class PageTemplateComponent extends React.Component {
   render() {
-    return (
-      <div className="pagetemplate-component">
-        <div style={divStyle}> Welcome to League Community POC - Pate Template body 
-        </div>
-      </div>
-    );
+
+    if (currTemplate == 'template1') {
+      return (
+              <Template1></Template1>
+        );
+    }
+    else {
+      return (
+              <Template2></Template2>
+        );
+    }
   }
 }
 
